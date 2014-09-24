@@ -18,7 +18,7 @@ DIRECTORY STRUCTURE
 common
 	config/				contains shared configurations
 	mail/				contains view files for e-mails
-	models/				contains model classes used in both backend and frontend
+	models/				contains model classes used in both backend and main
 	tests/				contains various tests for objects that are common among applications
 console
 	config/				contains console configurations
@@ -36,13 +36,13 @@ backend
 	tests/				contains various tests for the backend application
 	views/				contains view files for the Web application
 	web/				contains the entry script and Web resources
-frontend
+main
 	assets/				contains application assets such as JavaScript and CSS
-	config/				contains frontend configurations
+	config/				contains main configurations
 	controllers/		contains Web controller classes
-	models/				contains frontend-specific model classes
+	models/				contains main-specific model classes
 	runtime/			contains files generated during runtime
-	tests/				contains various tests for the frontend application
+	tests/				contains various tests for the main application
 	views/				contains view files for the Web application
 	web/				contains the entry script and Web resources
 vendor/					contains dependent 3rd-party packages
@@ -91,7 +91,7 @@ the installed application. You only need to do these once for all.
 3. Apply migrations with console command `yii migrate`. This will create tables needed for the application to work.
 4. Set document roots of your Web server:
 
-- for frontend `/path/to/yii-application/frontend/web/` and using the URL `http://frontend/`
+- for main `/path/to/yii-application/main/web/` and using the URL `http://main/`
 - for backend `/path/to/yii-application/backend/web/` and using the URL `http://backend/`
 
 To login into the application, you need to first sign up, with any of your email address, username and password.
